@@ -97,6 +97,7 @@ const Signup = () => {
               ]}
             >
               <Input
+                size="large"
                 name="name"
                 placeholder="Name"
                 onChange={(e) => handleChange(e)}
@@ -125,6 +126,7 @@ const Signup = () => {
               ]}
             >
               <Input
+                size="large"
                 name="email"
                 placeholder="Email"
                 onChange={(e) => handleChange(e)}
@@ -140,6 +142,7 @@ const Signup = () => {
               ]}
             >
               <Input
+                size="large"
                 placeholder="Phone Number"
                 name="phone"
                 onChange={(e) => handleChange(e)}
@@ -157,6 +160,7 @@ const Signup = () => {
               ]}
             >
               <Password
+                size="large"
                 placeholder="Password"
                 name="password"
                 onChange={(e) => handleChange(e)}
@@ -172,21 +176,18 @@ const Signup = () => {
                 ({ getFieldValue }) => confirmPasswordValidation(getFieldValue),
               ]}
             >
-              <Password placeholder="Confirm password" />
+              <Password placeholder="Confirm password" size="large" />
             </Item>
-            <Button className="sign-up-btn" type="primary" htmlType="submit">
+            <Button className="sign-up-btn" type="primary" htmlType="submit" size="large">
               Sign up
             </Button>
           </Form>
           <div className="register_option">
-            <Text>Already have an account ?</Text>
+            <Text className="alrady-text">Already have an account ?</Text>
             <Button className="sign-up-text" onClick={() => navigate('/login')}>
               Signin
             </Button>
           </div>
-          <button type="button" className="login-with-google-btn">
-            Sign in with Google
-          </button>
         </Space>
       </div>
     </div>
