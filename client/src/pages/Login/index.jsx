@@ -107,6 +107,7 @@ const Login = () => {
               ]}
             >
               <Input
+                size="large"
                 name="email"
                 placeholder="Email"
                 onChange={(e) => handleChange(e)}
@@ -125,12 +126,13 @@ const Login = () => {
               ]}
             >
               <Password
+                size="large"
                 name="password"
                 placeholder="Password"
                 onChange={(e) => handleChange(e)}
               />
             </Item>
-            <Button className="sign-up-btn" type="primary" htmlType="submit">
+            <Button className="sign-up-btn" type="primary" htmlType="submit" size="large">
               Login
             </Button>
           </Form>
@@ -140,9 +142,6 @@ const Login = () => {
               Signup
             </Button>
           </div>
-          <button type="button" className="login-with-google-btn">
-            Sign in with Google
-          </button>
         </Space>
       </div>
     </div>
