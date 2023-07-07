@@ -1,22 +1,24 @@
 .header-section {
-  /* width: 98.9vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
   height: 100vh;
 }
+
 .header-description {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3.8rem;
   line-height: 4.8rem;
   color: #ffff !important;
   text-align: center;
   width: 77%;
   margin-bottom: 20rem;
+  font-family: 'Noto Kufi Arabic', sans-serif;
 }
+
 .description-header-div {
   padding-top: 25vh;
   display: flex;
@@ -28,6 +30,7 @@
   background-size: cover;
   height: 90vh;
 }
+
 .statistic-section {
   transform: translate(0, -50%);
   background-color: #469D62;
@@ -37,6 +40,7 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 2px;
+  font-family: 'Noto Kufi Arabic', sans-serif;
 }
 
 .statistic-card {
@@ -52,16 +56,20 @@
   justify-content: center;
   border-radius: 2px;
   padding: 1rem;
+  font-family: 'Noto Kufi Arabic', sans-serif;
 }
+
 .statistic-data {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
-  font-size: 4.5rem;
+  font-size: 4.9rem;
   line-height: 2.5rem;
   color: #469D62 !important;
   margin-bottom: 3rem;
+  font-family: 'Noto Kufi Arabic', sans-serif;
 }
+
 .statistic-title {
   font-style: normal;
   font-weight: bold;
@@ -71,12 +79,16 @@
   margin-bottom: 5px;
   text-transform: uppercase;
   text-align: center;
+
 }
+
 .description-title {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 800;
+
 }
+
 @media (max-width: 800px) {
   .statistic-section {
     display: none;
