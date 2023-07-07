@@ -77,6 +77,7 @@ const FilterCampaigns = ({ setCategory, setAvailable, setSearch }) => {
         <div>
           <b>Available campaigns: </b>
           <Switch
+            size="default"
             defaultChecked
             onChange={handleAvailableChange}
           />
