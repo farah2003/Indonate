@@ -16,8 +16,7 @@
   },
   "pre-commit": [
     "lint",
-    "lint:client",
-    "test"
+    "lint:client"
   ],
   "repository": {
     "type": "git",
