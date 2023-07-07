@@ -41,28 +41,32 @@ const Nav = () => {
     { label: <Link to="/#reports-form-container">Contact Us</Link> },
     { label: <NavLink to="/campaigns"> Campaigns</NavLink> },
   ];
-
   const userItem = [
     {
       label: (
         <NavLink to="/signup">
-          <Button type="primary">Signup</Button>
+          <Button type="primary" size="large">
+            Signup
+          </Button>
         </NavLink>
       ),
     },
     {
       label: (
         <NavLink to="/login">
-          <Button type="primary">Login</Button>
+          <Button type="primary" size="large" className="custom-button">
+            Login
+          </Button>
         </NavLink>
       ),
     },
   ];
+
   const guestItem = [
     {
       label: (
         <NavLink to="/">
-          <Button onClick={logoutFun} className="btn" type="primary">
+          <Button onClick={logoutFun} className="btn" type="primary" size="large">
             Logout
           </Button>
         </NavLink>
@@ -71,11 +75,15 @@ const Nav = () => {
     {
       label: user?.userData?.isAdmin ? (
         <NavLink to="/admin">
-          <Button type="primary">Dashboard</Button>
+          <Button type="primary" size="large" className="custom-button">
+            Dashboard
+          </Button>
         </NavLink>
       ) : (
         <NavLink to="/campaigns">
-          <Button type="primary">Donate Now</Button>
+          <Button type="primary" size="large" className="custom-button">
+            Donate Now
+          </Button>
         </NavLink>
       ),
     },
@@ -86,7 +94,7 @@ const Nav = () => {
         <Layout>
           <Header>
             <Image
-              width={120}
+              width={170}
               src={logo}
               preview={false}
               onClick={() => navigate('/')}
@@ -95,11 +103,13 @@ const Nav = () => {
             <Menu
               mode="horizontal"
               defaultSelectedKeys={1}
+              size="large"
               items={
                 user.isUserAuthorized
                   ? [...commonList, ...guestItem]
                   : [...commonList, ...userItem]
               }
+              className="custom-menu"
             />
           </Header>
         </Layout>
