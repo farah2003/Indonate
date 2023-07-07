@@ -18,11 +18,11 @@ import {
 
 const router = Router();
 
-router.use(authRouter);
 router.use(categoryRouter);
 router.use(campaignRouter);
 router.use(reportsRouter);
 router.use(statisticsRouter);
+router.use(authRouter);
 
 router.use(authUser);
 router.use(donationRouter);
