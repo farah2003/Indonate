@@ -47,8 +47,8 @@ const CampaignCard = ({
             title={title}
             avatar={<Avatar src={categoryIcon} />}
           />
-          <Text type="secondary">
-            {description.slice(0, 90)}
+          <Text>
+            {description.slice(0, 123)}
             know more ...
           </Text>
           <DonationButton campaignId={id} isAvailable={isAvailable} />

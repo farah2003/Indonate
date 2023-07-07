@@ -3,11 +3,20 @@
   border-radius: 5px;
   width: 100%;
 }
+
 .customCard {
-  max-width: 290px;
+  max-width: 375px;
+
   .ant-card {
     width: 45%;
   }
+
+  .ant-card-body {
+    padding: 20px;
+  }
+
+
+
   .ant-card-body {
     position: relative;
     display: flex;
@@ -20,19 +29,30 @@
   .ant-card-meta-title {
     overflow: hidden;
     color: rgba(0, 0, 0, 0.85);
-    font-size: 16px;
-    font-size: 15px;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
     white-space: inherit;
     max-height: 3.6em;
-    line-height: 1.8em;
+    line-height: 1.9em;
   }
 
   .ant-typography.ant-typography-secondary {
-    margin: 10px;
+    margin: 25px 10px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.45);
   }
+
+  .ant-typography {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .ant-btn {
+    font-size: 20px;
+    height: 45px;
+  }
+
+
 
   button,
   html [type='button'],
@@ -68,6 +88,6 @@
   .ant-skeleton {
     height: 412px;
     width: 212px;
-  } 
-  
+  }
+
 }
